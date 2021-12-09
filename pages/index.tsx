@@ -1,17 +1,11 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
+import Layout from './components/Layout';
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Datacat</title>
-        <meta name="description" content="An open source uptime monitor" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <h1>Datacat</h1>
-    </>
+    <Layout>
+      <h1 className="text-5xl">Datacat</h1>
+    </Layout>
   );
 };
 
